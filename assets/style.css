@@ -91,4 +91,5 @@ div.betterTooltip {
   padding: 3px;
   border: #28497c solid 1px;
   display: none;
+  text-align: center;
 }

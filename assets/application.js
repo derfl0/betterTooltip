@@ -10,9 +10,10 @@ $(document).ready(function() {
     $('[data-title]').mouseenter(function() {
         var text = $(this).attr('data-title');
         var position = $(this).position();
+        var width = $(this).width();
         var tooltip = $('<div>').addClass('betterTooltip').html(text);
         $("body").prepend(tooltip);
-        tooltip.css('left', position.left - (tooltip.width() / 2));
+        tooltip.css('left', position.left + (width / 2) - (tooltip.width() / 2));
         tooltip.css('top', position.top - tooltip.height() - 10);
         tooltip.fadeIn(400);
     });
