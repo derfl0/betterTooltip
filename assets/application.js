@@ -14,9 +14,10 @@ $(document).ready(function() {
         $("body").prepend(tooltip);
         tooltip.css('left', position.left - (tooltip.width() / 2));
         tooltip.css('top', position.top - tooltip.height() - 10);
+        tooltip.fadeIn(400);
     });
     
     $('[data-title]').mouseleave(function() {
-       $('div.betterTooltip').remove(); 
+       $('div.betterTooltip').fadeOut(400).remove(); 
     });
 });

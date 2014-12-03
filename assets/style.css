@@ -86,8 +86,9 @@
 /* CSS */
 div.betterTooltip {
   position: absolute;
-  z-index: 3;
+  z-index: 9999999;
   background-color: #d0d7e3;
   padding: 3px;
   border: #28497c solid 1px;
+  display: none;
 }
